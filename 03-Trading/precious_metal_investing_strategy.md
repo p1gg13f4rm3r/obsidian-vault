@@ -831,3 +831,195 @@ Given:
 ---
 
 *Report generated: 2026-03-14*
+
+---
+
+# GOLD & SILVER OPTION STRATEGIES FOR MARKET CRASH
+
+---
+
+## BASIC STRATEGIES (Low Risk)
+
+### 1. Protective Puts (Insurance)
+**What:** Buy puts to protect your stock
+
+**Setup:**
+- Own 100 shares GLD → Buy 1 put OTM
+- Cost: ~1-2% of position
+
+**Example:**
+- GLD at $200
+- Buy $190 put for $2/share
+- Max risk: $12/share (190 - 200 + 2)
+- Unlimited upside preserved
+
+**When to use:** You own GLD/SLV, want downside protection
+
+---
+
+### 2. Cash-Secured Puts (Generate Income)
+**What:** Sell puts, collect premium
+
+**Setup:**
+- Sell 1 put at strike below current price
+- Collect premium (e.g., $2/share)
+- Keep premium if stock stays above strike
+- Get assigned (buy stock) if it drops below
+
+**Example:**
+- GLD at $200
+- Sell $190 put, receive $2 premium
+- If GLD stays > $190: Keep $2 profit
+- If GLD drops to $180: Buy at $190 (effectively $188)
+
+**When to use:** Willing to buy at lower price, want income
+
+---
+
+## LEVERAGED STRATEGIES (Medium Risk)
+
+### 3. Bull Call Spread (Limited Risk)
+**What:** Buy call, sell call at higher strike
+
+**Setup:**
+- Buy 1 $200 call, Sell 1 $220 call
+- Net debit (pay premium)
+
+**Example:**
+- GLD at $200
+- Buy $200 call: $5
+- Sell $220 call: $2
+- Net cost: $3
+
+| GLD Price | Profit/Loss |
+|-----------|--------------|
+| $195     | -$3 (lose premium) |
+| $203     | $0 (break even) |
+| $220     | +$17 (max profit) |
+| $230     | +$17 (capped) |
+
+**Max Risk:** $3/share | **Max Profit:** $17/share (5.7x leverage)
+
+**When to use:** Bullish but want limited risk
+
+---
+
+### 4. Put Debit Spread (Cheaper than protective put)
+**What:** Buy put, sell put at lower strike
+
+**Example:**
+- GLD at $200
+- Buy $200 put: $4
+- Sell $180 put: $1
+- Net cost: $3
+
+| GLD Price | Profit/Loss |
+|-----------|--------------|
+| $200     | +$17 |
+| $190     | +$7 |
+| $180     | -$3 |
+
+**When to use:** Bearish, want to profit from drop
+
+---
+
+## ADVANCED STRATEGIES
+
+### 5. LEAPs (Long-Term Calls)
+**What:** Buy long-dated calls (1+ year)
+
+**Example:**
+- GLD at $200
+- Buy Jan 2027 $200 call: $25
+- If GLD goes to $250: Call worth ~$50 (+100%)
+- If GLD stays $200: Lose $25 (time decay)
+
+**When to use:** Long-term bullish, want leverage
+
+---
+
+### 6. Iron Condor (Neutral/Volatile)
+**What:** Sell OTM call + put, buy further OTM protection
+
+**Setup:**
+- Sell $220 call / Buy $230 call
+- Sell $180 put / Buy $170 put
+- Net credit: ~$2-3
+
+**When to use:** Expect low volatility, range-bound
+
+---
+
+## CRASH-SPECIFIC STRATEGIES
+
+### Strategy A: Buy the Dip with Puts
+
+| Day | Action |
+|-----|--------|
+| 1-3 | Watch, do nothing |
+| 3-5 | Sell cash-secured puts (SLV $25 strike) |
+| If assigned | You're now holding SLV at discount |
+| 30-60 days | Sell covered calls to reduce cost basis |
+
+**Example (SLV at $30 pre-crash):**
+- Sell $25 put, get $2 premium
+- Crash: SLV drops to $22
+- Get assigned at $25, cost basis $23
+- Sell $28 call to generate more income
+
+---
+
+### Strategy B: Silver LEAP + Protective Put
+**For silver bulls:**
+
+| Position | Details |
+|----------|---------|
+| Buy SLV Jan 2027 $30 call | $4 (LEAP) |
+| Buy SLV $22 put | $1 (protection) |
+| Total cost | $5 |
+| Max risk | $5 |
+| Upside | Unlimited |
+
+---
+
+### Strategy C: Metal Miners Options
+**For GDX/SILJ (more volatile):**
+
+| Strategy | Risk | Reward |
+|----------|------|--------|
+| Protective Put | Limited | Unlimited |
+| Call Spread | Limited | Limited |
+| LEAP | High | High |
+
+**Why miners?** More volatile = cheaper options, bigger moves
+
+---
+
+## QUICK REFERENCE
+
+| Your View | Strategy | Why |
+|-----------|----------|-----|
+| Own gold, want protection | Protective Put | Insurance |
+| Want to buy cheaper | Cash-Secured Put | Get discount |
+| Bullish, limited risk | Bull Call Spread | Leverage |
+| Very bullish, long-term | LEAP Calls | Maximum leverage |
+| Neutral, low volatility | Iron Condor | Income |
+| Big move coming | Straddle | Profit from volatility |
+
+---
+
+## KEY TAKEAWAYS
+
+1. **Protective puts** = cheapest insurance (1-2%)
+2. **Spreads** = reduce cost, limit profit
+3. **LEAPs** = best for long-term plays
+4. **Miners (GDX/SILJ)** = cheaper options, bigger moves
+5. **Sell covered calls** = generate income on holdings
+
+---
+
+*Options involve risk. Do your own research.*
+
+---
+
+*Report generated: 2026-03-14*
