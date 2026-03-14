@@ -1022,4 +1022,136 @@ Given:
 
 ---
 
+# 80% GOLD/SILVER PORTFOLIO - OPTIMIZED STRATEGY
+
+**Analysis Date:** March 14, 2026
+
+---
+
+## Your Situation
+
+You're already 80% long PMs. Here's how to protect gains and optimize:
+
+| Current Allocation | Recommended |
+|-------------------|-------------|
+| GLD/SLV | 50% |
+| GDX/SILJ | 20% |
+| Cash | 20% |
+| Other | 10% |
+
+---
+
+## Recommended Strategies
+
+### 1. PROTECT YOUR GAINS (Priority #1)
+
+Given 2025 gains: GLD +62%, SLV +139%, GDX +145%, SILJ +168%
+
+**Protective Puts:**
+- Buy 10-15% OTM puts on GLD/SLV/GDX
+- Cost: ~1-2% of position
+- Example: Own $100k GLD → Buy $190 puts = ~$2k insurance
+
+**What it does:**
+- Limits downside to ~15%
+- Preserves upside
+
+---
+
+### 2. GENERATE INCOME (Cash Flow)
+
+**Sell Covered Calls:**
+- On your GLD/SLV shares
+- Sell 5-10% OTM calls
+- Collect 1-3% premium per month
+
+**Example:**
+- 100 shares GLD @ $200 = $20k
+- Sell $210 call, receive $1/share = $100
+- If GLD stays < $210: Keep premium
+- If GLD rallies past $210: Sell at $210 + keep premium
+
+**Annual income:** 12-36% on covered portion
+
+---
+
+### 3. HEDGE WITH COLLAR (Zero Cost)
+
+**Setup:**
+- Buy GLD $190 put: $3
+- Sell $215 call: $2
+- Net cost: $1
+
+| GLD Price | P&L |
+|-----------|------|
+| $180 | -$10 (protected) |
+| $200 | +$17 |
+| $215+ | +$17 (capped) |
+
+**Result:** Downside protected, upside capped, near-zero cost
+
+---
+
+### 4. REDUCE TO 60-70%, ADD DIVERSIFIERS
+
+| Reduce | Add To |
+|--------|--------|
+| -10% GLD | TLT (long bonds) |
+| -5% SLV | Utilities/XLU |
+| -5% GDX | Cash |
+
+**New allocation:**
+- 55-60% PMs
+- 15% Bonds (TLT)
+- 10% Cash
+- 15% Other
+
+---
+
+### 5. SILVER LEAPS FOR UPSIDE
+
+**Buy LEAPs instead of more stock:**
+- Buy Jan 2027 $35 SLV call: $3
+- If SLV goes to $50: Call worth ~$15 (+400%)
+- Max loss: $3
+
+---
+
+## Recommended Action Plan
+
+| Priority | Action | Why |
+|----------|--------|-----|
+| 1️⃣ | Buy protective puts (5-10% portfolio) | Insurance |
+| 2️⃣ | Sell covered calls on 25-30% of holdings | Income |
+| 3️⃣ | Consider reducing 10% to add TLT | Diversification |
+| 4️⃣ | Add LEAP calls for upside (optional) | Leverage |
+
+---
+
+## My Pick
+
+**For your 80% long position:**
+
+1. Buy protective puts (5% of portfolio)
+2. Sell covered calls on 30% of holdings
+3. Keep 65% as-is for long-term hold
+4. Consider selling 10% to add TLT
+
+This generates income + protects downside + keeps your conviction.
+
+---
+
+## What to Avoid
+
+✗ Don't sell all PMs - you're right on the thesis
+✗ Don't buy more without protection
+✗ Don't use all cash - need dry powder for dips
+✗ Don't ignore diversification entirely
+
+---
+
+*Position sizing is key - adjust based on your risk tolerance.*
+
+---
+
 *Report generated: 2026-03-14*
