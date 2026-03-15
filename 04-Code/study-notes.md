@@ -12,7 +12,7 @@
 
 ## Stock Trading
 
-### github.com/ZhuLinsen/daily_stock_analysis
+### [github.com/ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
@@ -21,17 +21,17 @@
 
 ## AI / Autonomous Agents
 
-### github.com/TraderAlice/OpenAlice
+### [github.com/TraderAlice/OpenAlice](https://github.com/TraderAlice/OpenAlice)
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
-### github.com/andrewyng/context-hub
+### [github.com/andrewyng/context-hub](https://github.com/andrewyng/context-hub)
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
-### github.com/karpathy/autoresearch
+### [github.com/karpathy/autoresearch](https://github.com/karpathy/autoresearch)
 - Added: 2025-03-13 (consolidated 2026-03-15)
 - Status: To be studied
 - Notes: Autonomous AI research agent by Andrej Karpathy — researches and writes code autonomously
@@ -40,7 +40,7 @@
 
 ## Research / experiments
 
-### github.com/666ghj/MiroFish
+### [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish)
 - Added: 2026-03-14
 - Status: To be studied
 - Notes: 
