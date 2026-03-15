@@ -1,5 +1,15 @@
 # Study Notes - GitHub Repos
 
+## Index
+
+| Category | Count |
+|----------|-------|
+| [Stock Trading](#stock-trading) | 1 |
+| [AI / Autonomous Agents](#ai--autonomous-agents) | 3 |
+| [Research / experiments](#research--experiments) | 1 |
+
+---
+
 ## Stock Trading
 
 ### github.com/ZhuLinsen/daily_stock_analysis
