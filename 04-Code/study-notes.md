@@ -13,6 +13,7 @@
 ## Stock Trading
 
 ### [github.com/ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
+**Summary:** LLM-driven A/H/US stock analyzer with multi-source quotes + real-time news + LLM decision dashboard + multi-channel push. Free, runs on schedule.
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
@@ -22,16 +23,19 @@
 ## AI / Autonomous Agents
 
 ### [github.com/TraderAlice/OpenAlice](https://github.com/TraderAlice/OpenAlice)
+**Summary:** File-driven AI trading agent engine for crypto and securities markets.
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
 ### [github.com/andrewyng/context-hub](https://github.com/andrewyng/context-hub)
+**Summary:** Gives coding agents curated, versioned docs + ability to get smarter with every task. All content is open and maintained as markdown. CLI tool: `chub search` / `chub get`.
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
 ### [github.com/karpathy/autoresearch](https://github.com/karpathy/autoresearch)
+**Summary:** AI agents running research on single-GPU nanochat training automatically.
 - Added: 2025-03-13 (consolidated 2026-03-15)
 - Status: To be studied
 - Notes: Autonomous AI research agent by Andrej Karpathy — researches and writes code autonomously
@@ -41,6 +45,7 @@
 ## Research / experiments
 
 ### [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish)
+**Summary:** A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Universal swarm intelligence engine for predictions.
 - Added: 2026-03-14
 - Status: To be studied
 - Notes: 
