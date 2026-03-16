@@ -7,6 +7,7 @@
 | [Stock Trading](#stock-trading) | 1 |
 | [AI / Autonomous Agents](#ai--autonomous-agents) | 3 |
 | [Research / experiments](#research--experiments) | 1 |
+| [Learning / Education](#learning--education) | 1 |
 
 ---
 
@@ -47,6 +48,16 @@
 ### [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish)
 **Summary:** A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Universal swarm intelligence engine for predictions.
 - Added: 2026-03-14
+- Status: To be studied
+- Notes: 
+
+---
+
+## Learning / Education
+
+### [github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
+**Summary:** Master programming by recreating your favorite technologies from scratch. 475k+ stars — massive collection of build-your-own-X tutorials.
+- Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
