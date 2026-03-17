@@ -5,7 +5,7 @@
 | Category | Count |
 |----------|-------|
 | [Stock Trading](#stock-trading) | 1 |
-| [AI / Autonomous Agents](#ai--autonomous-agents) | 3 |
+| [AI / Autonomous Agents](#ai--autonomous-agents) | 4 |
 | [Research / experiments](#research--experiments) | 1 |
 | [Learning / Education](#learning--education) | 1 |
 
