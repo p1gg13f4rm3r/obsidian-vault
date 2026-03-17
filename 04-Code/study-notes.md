@@ -41,6 +41,12 @@
 - Status: To be studied
 - Notes: Autonomous AI research agent by Andrej Karpathy — researches and writes code autonomously
 
+### [github.com/obra/superpowers](https://github.com/obra/superpowers)
+**Summary:** Agentic skills framework & software development methodology. A complete workflow for coding agents with composable "skills" (brainstorming, TDD, writing-plans, subagent-driven-development, code review, etc.). Works with Claude Code, Cursor, Codex, OpenCode, Gemini CLI.
+- Added: 2026-03-16
+- Status: To be studied
+- Notes: 
+
 ---
 
 ## Research / experiments
