@@ -61,12 +61,16 @@
 ---
 
 ## Learning / Education
+
+### [github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 **Summary:** Master programming by recreating your favorite technologies from scratch. 475k+ stars — massive collection of build-your-own-X tutorials.
 - Added: 2026-03-15
 - Status: To be studied
 - Notes: 
 
 ---
+
+## Productivity
 
 ### [github.com/gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)
 **Summary:** Productivity/task management tool (need more details)
