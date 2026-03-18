@@ -5,9 +5,9 @@
 | Category | Count |
 |----------|-------|
 | [Stock Trading](#stock-trading) | 1 |
-| [AI / Autonomous Agents](#ai--autonomous-agents) | 4 |
+| [AI / Autonomous Agents](#ai--autonomous-agents) | 5 |
 | [Research / experiments](#research--experiments) | 1 |
-| [Learning / Education](#learning--education) | 1 |
+| [Learning / Education](#learning--education) | 2 |
 | [Productivity](#productivity) | 1 |
 
 ---
@@ -48,6 +48,16 @@
 - Status: To be studied
 - Notes: 
 
+### [github.com/mattpocock/skills](https://github.com/mattpocock/skills)
+**Summary:** A collection of agent skills that extend capabilities across planning, development, and tooling. Personal directory of skills from Matt Pocock (creator of Total TypeScript).
+- Added: 2026-03-17
+- Status: To be studied
+- Notes: 
+  - **Planning & Design:** write-a-prd, prd-to-issues, grill-me
+  - **Development:** tdd, triage-issue, improve-codebase-architecture
+  - **Tooling:** setup-pre-commit, git-guardrails-claude-code
+  - **Writing:** write-a-skill
+
 ---
 
 ## Research / experiments
@@ -61,6 +71,16 @@
 ---
 
 ## Learning / Education
+
+### [Game Theory - Giacomo Bonanno](https://arxiv.org/pdf/1512.06808)
+**Summary:** Comprehensive Game Theory textbook with 165 solved exercises. Covers ordinal/cardinal games, Nash equilibrium, subgame-perfect equilibrium, knowledge & common knowledge, and refinements.
+- Added: 2026-03-17
+- Status: To be studied
+- Notes: 
+  - Part I: Games with ordinal payoffs
+  - Part II: Games with cardinal payoffs
+  - Part III: Knowledge, common knowledge, belief
+  - Part IV: Refinements of subgame-perfect equilibrium
 
 ### [github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 **Summary:** Master programming by recreating your favorite technologies from scratch. 475k+ stars — massive collection of build-your-own-X tutorials.
