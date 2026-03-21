@@ -5,7 +5,7 @@
 | Category | Count |
 |---------|-------|
 | [Stock Trading](#stock-trading) | 1 |
-| [AI / Autonomous Agents](#ai--autonomous-agents) | 5 |
+| [AI / Autonomous Agents](#ai--autonomous-agents) | 6 |
 | [Research / experiments](#research--experiments) | 1 |
 | [Learning / Education](#learning--education) | 2 |
 | [Productivity](#productivity) | 1 |
@@ -58,6 +58,15 @@
   - **Development:** tdd, triage-issue, improve-codebase-architecture
   - **Tooling:** setup-pre-commit, git-guardrails-claude-code
   - **Writing:** write-a-skill
+
+### [github.com/Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything)
+**Summary:** Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about. Supports multi-platform agents (Claude Code, Codex, etc.). 2.2k+ stars.
+- Added: 2026-03-21
+- Status: To be studied
+- Notes: 
+  - **Topics:** claude-code, claude-skills, codex-skills, knowledge-graph, understandcode
+  - **License:** MIT
+  - **Homepage:** https://lum.is-a.dev/Understand-Anything/
 
 ---
 
