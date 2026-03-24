@@ -7,8 +7,8 @@
 | [Stock Trading](#stock-trading) | 1 |
 | [AI / Autonomous Agents](#ai--autonomous-agents) | 6 |
 | [Research / experiments](#research--experiments) | 1 |
-| [Learning / Education](#learning--education) | 2 |
-| [Productivity](#productivity) | 1 |
+| [Learning / Education](#learning--education) | 3 |
+| [Productivity](#productivity) | 2 |
 | [File Format / Reverse Engineering](#file-format--reverse-engineering) | 2 |
 
 ---
@@ -92,6 +92,23 @@
   - Part III: Knowledge, common knowledge, belief
   - Part IV: Refinements of subgame-perfect equilibrium
 
+### The First Principles Stack
+**Summary:** A 5-step framework for achieving true understanding — stripping every assumption until you rebuild from provable ground truths.
+- Added: 2026-03-23
+- Status: Reference
+- Notes:
+  | Step | Question | What It Does |
+  |------|----------|--------------|
+  | 1 | "What is provably true?" | Break topic down using first principles. Strip every assumption. Rebuild from only what's provably true. |
+  | 2 | "Can a 12-year-old understand it?" | Explain it simply. If it's not simple yet, keep going. |
+  | 3 | "Which assumptions are actually proven?" | Identify the 5 assumptions beginners accept without question. |
+  | 4 | "What if the top 3 are wrong?" | Stress-test the field's foundations. What collapses? |
+  | 5 | "What would you build from zero?" | Start from the fundamentals. No industry conventions. No inherited thinking. |
+  - **Core insight:** Each step strips another layer. By step 5 you're not thinking about the topic the way everyone else thinks about it — you're thinking from the ground up.
+  - **Quote:** *"That's the difference between knowledge and understanding."*
+
+---
+
 ### [github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 **Summary:** Master programming by recreating your favorite technologies from scratch. 475k+ stars — massive collection of build-your-own-X tutorials.
 - Added: 2026-03-15
@@ -107,6 +124,20 @@
 - Added: 2026-03-17
 - Status: To be studied
 - Notes:
+
+### [github.com/jzOcb/writing-style-skill](https://github.com/jzOcb/writing-style-skill)
+**Summary:** Reusable writing style skill template for AI coding agents. Built-in **auto-learning** — extracts rules from your edits (diff `original` vs `final`), so SKILL.md gets smarter the more you use it. Works with Claude Code + OpenClaw/ClawHub.
+- Added: 2026-03-24
+- Status: To be studied
+- Notes:
+  - **Core loop:** AI drafts → you revise → diff extracts rules → rules update SKILL.md
+  - **Key files:** `SKILL.md` (style rules), `scripts/observe.py` (record original/final), `scripts/improve.py` (extract rules via LLM)
+  - **Rule confidence:** P0/P1/P2 tiers — P0 auto-applied, backup before each update
+  - **LLM support:** auto-detects `claude` (Claude Code) → `llm` (pip) → `IMPROVE_LLM_CMD` env var
+  - **Install (Claude Code):** `cp -r writing-style-skill ~/.claude/skills/my-writing-style`
+  - **Install (OpenClaw):** `npx clawhub@latest install jz-writing-style-skill`
+  - **License:** MIT
+  - **Topics:** claude-code, claude-skills, writing, productivity
 
 ## Previously Studied
 
