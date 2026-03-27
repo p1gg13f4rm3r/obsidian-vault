@@ -113,8 +113,8 @@ This is politically survivable. It's also **hidden taxation** — savers and bon
 
 | Allocation | Asset | % | Notes |
 |-----------|-------|---|-------|
-| 35–40% | GLD | Core | Stagflation hedge, hold for years |
-| 15–20% | SLV / SILJ | Satellite | Gold lever |
+| 35–40% | GC=F | Core | Gold Futures (CME, 100 oz) — primary reference, trade on GLD |
+| 15–20% | SI=F / SILJ | Satellite | Silver Futures — trade on SLV/SILJ for size |
 | 15–20% | XLE or OIH | Satellite | Oil scarcity play |
 | 15–20% | ITA or XAR | Satellite | Cold war 2.0 defense |
 | 10–15% | GDX | Satellite | Gold miners equity exposure |

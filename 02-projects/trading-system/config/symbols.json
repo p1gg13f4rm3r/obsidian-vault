@@ -86,13 +86,13 @@
       "category": "ETF"
     },
     {
-      "symbol": "GLD",
-      "name": "SPDR Gold Shares",
+      "symbol": "GC=F",
+      "name": "Gold Futures (CME, 100 oz)",
       "category": "Commodities"
     },
     {
-      "symbol": "SLV",
-      "name": "iShares Silver Trust",
+      "symbol": "SI=F",
+      "name": "Silver Futures (CME, 5000 oz)",
       "category": "Commodities"
     },
     {
