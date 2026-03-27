@@ -1,0 +1,104 @@
+{
+  "strategies": [
+    {
+      "name": "mean_reversion_aggressive",
+      "display_name": "Mean Reversion — Aggressive",
+      "description": "Buy when RSI < 30 (oversold). Exit when RSI > 50.",
+      "parameters": {
+        "rsi_period": 14,
+        "oversold": 30,
+        "exit_threshold": 50
+      }
+    },
+    {
+      "name": "mean_reversion_conservative",
+      "display_name": "Mean Reversion — Conservative",
+      "description": "Buy when RSI < 30 AND price within 2% of lower Bollinger Band. Exit when RSI > 50.",
+      "parameters": {
+        "rsi_period": 14,
+        "bb_period": 20,
+        "bb_std": 2,
+        "oversold": 30,
+        "near_bb_threshold": 0.02,
+        "exit_threshold": 50
+      }
+    },
+    {
+      "name": "trend_following",
+      "display_name": "Trend Following",
+      "description": "Buy when EMA 13 crosses above EMA 50 with MACD bullish. Sell when EMA 13 crosses below EMA 50.",
+      "parameters": {
+        "ema_short": 13,
+        "ema_long": 50,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9
+      }
+    },
+    {
+      "name": "momentum",
+      "display_name": "Momentum",
+      "description": "Buy when price crosses above EMA with positive momentum. Exit on momentum flip.",
+      "parameters": {
+        "ema_period": 20,
+        "momentum_period": 10,
+        "threshold": 0.0
+      }
+    },
+    {
+      "name": "price_action",
+      "display_name": "Price Action",
+      "description": "Buy on support breakout. Sell on resistance hit.",
+      "parameters": {
+        "lookback": 20
+      }
+    },
+    {
+      "name": "volume",
+      "display_name": "Volume",
+      "description": "Buy on volume spike combined with price move. Exit when volume normalizes.",
+      "parameters": {
+        "volume_ma_period": 20,
+        "volume_spike_factor": 1.5
+      }
+    },
+    {
+      "name": "ma_cross",
+      "display_name": "Moving Average Crossover",
+      "description": "Buy when short MA crosses above long MA, sell on reverse.",
+      "parameters": {
+        "short_window": 20,
+        "long_window": 50
+      }
+    },
+    {
+      "name": "macd",
+      "display_name": "MACD Signal",
+      "description": "Buy when MACD crosses above signal line, sell on reverse.",
+      "parameters": {
+        "fast_period": 12,
+        "slow_period": 26,
+        "signal_period": 9
+      }
+    },
+    {
+      "name": "bbands",
+      "display_name": "Bollinger Bands",
+      "description": "Buy at lower band support, sell at upper band resistance.",
+      "parameters": {
+        "period": 20,
+        "std_dev": 2
+      }
+    },
+    {
+      "name": "rsi",
+      "display_name": "RSI Mean Reversion",
+      "description": "Buy oversold (RSI < 30), sell overbought (RSI > 70).",
+      "parameters": {
+        "period": 14,
+        "oversold": 30,
+        "overbought": 70
+      }
+    }
+  ]
+}
