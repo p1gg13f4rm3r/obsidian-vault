@@ -836,189 +836,227 @@ Given:
 
 # GOLD & SILVER OPTION STRATEGIES FOR MARKET CRASH
 
+> **⚠️ Note:** All option examples use current prices as of **March 27, 2026**. Always check real-time option chains before trading.
+>
+> | Asset | Current Price | Reference |
+> |-------|-------------|-----------|
+> | GLD | ~$413 | SPDR Gold Shares |
+> | SLV | ~$63 | iShares Silver Trust |
+> | GDX | ~$85 | VanEck Gold Miners ETF |
+> | SILJ | ~$28 | ETFMG Silver Miners ETF |
+
 ---
 
 ## BASIC STRATEGIES (Low Risk)
 
 ### 1. Protective Puts (Insurance)
-**What:** Buy puts to protect your stock
+**What:** Buy puts to protect your stock position
 
 **Setup:**
-- Own 100 shares GLD → Buy 1 put OTM
-- Cost: ~1-2% of position
+- Own shares of GLD/SLV/GDX → Buy 1 put OTM per 100 shares
+- Cost: ~1-3% of position
+- Expiration: 6-12 months out (e.g., September 2026 or December 2026)
 
 **Example:**
-- GLD at $200
-- Buy $190 put for $2/share
-- Max risk: $12/share (190 - 200 + 2)
-- Unlimited upside preserved
+- GLD at **$413** (March 27, 2026)
+- Buy **GLD Sep 2026 $370 put** (10% OTM)
+- Cost: ~$12-15 per share × 100 = **~$1,200-1,500 per contract**
+- Max risk: $370 (strike) - $413 (current) - $15 (premium) = **-$58/share** if exercised
+- Upside: **Fully preserved** — you still own the GLD shares
 
-**When to use:** You own GLD/SLV, want downside protection
+**When to use:** You own GLD/SLV/GDX, want to lock in gains without selling
 
 ---
 
-### 2. Cash-Secured Puts (Generate Income)
-**What:** Sell puts, collect premium
+### 2. Cash-Secured Puts (Generate Income / Buy at a Discount)
+**What:** Sell puts, collect premium — get paid to wait to buy lower
 
 **Setup:**
 - Sell 1 put at strike below current price
-- Collect premium (e.g., $2/share)
+- Collect premium
 - Keep premium if stock stays above strike
-- Get assigned (buy stock) if it drops below
+- Get assigned (buy stock) at strike price if it drops below
 
 **Example:**
-- GLD at $200
-- Sell $190 put, receive $2 premium
-- If GLD stays > $190: Keep $2 profit
-- If GLD drops to $180: Buy at $190 (effectively $188)
+- GLD at **$413** (March 27, 2026)
+- Sell **GLD Sep 2026 $380 put** — collect ~$10-13 premium
+- If GLD stays above $380 by Sep 2026: **Keep ~$1,000-1,300 profit**
+- If GLD drops to $360: Get assigned, effectively buy at **$370** ($380 strike - $10 premium)
+- Cost basis: $370/share vs. current $413 — **you bought at a 10% discount**
 
-**When to use:** Willing to buy at lower price, want income
+**When to use:** Willing to buy at a lower price, want income while waiting
+
+---
+
+### 3. Sell Covered Calls (Income on Holdings)
+**What:** Sell calls against shares you own, collect premium
+
+**Setup:**
+- Own 100+ shares of GLD/SLV/GDX
+- Sell OTM calls (5-15% above current price)
+- Collect premium monthly or at next expiration
+
+**Example:**
+- Own **100 shares GLD @ $413 = $41,300 position**
+- Sell **GLD Sep 2026 $450 call** — receive ~$10-13 premium
+- If GLD stays below $450 by Sep 2026: **Keep $1,000-1,300 premium**
+- If GLD rallies to $460: Called away at $450 — you sold $450 but kept premium
+- Effective sell price: **$460-463** (better than if you had no hedge)
+
+**Annual income potential:** 3-8% of position value in premium
+**When to use:** Want income on existing holdings, willing to cap upside slightly
 
 ---
 
 ## LEVERAGED STRATEGIES (Medium Risk)
 
-### 3. Bull Call Spread (Limited Risk)
-**What:** Buy call, sell call at higher strike
+### 4. Bull Call Spread (Limited Risk, Lower Cost)
+**What:** Buy call, sell call at higher strike — reduces cost vs. buying naked call
 
-**Setup:**
-- Buy 1 $200 call, Sell 1 $220 call
-- Net debit (pay premium)
+**Example (GLD at $413, expiring September 2026):**
+- Buy **GLD Sep 2026 $420 call**: ~$18-22
+- Sell **GLD Sep 2026 $460 call**: ~$8-11
+- Net debit: **~$10-14 per share ($1,000-1,400 per spread)**
 
-**Example:**
-- GLD at $200
-- Buy $200 call: $5
-- Sell $220 call: $2
-- Net cost: $3
+| GLD at Expiration | Profit/Loss |
+|--------------------|-------------|
+| Below $420 | -$10 to -$14 (lose full premium) |
+| $420-$460 | Profit grows from $0 to max |
+| At $430 | Break even |
+| At $460+ | **Max profit: ~$30-40 per share** (2.5-3x return) |
 
-| GLD Price | Profit/Loss |
-|-----------|--------------|
-| $195     | -$3 (lose premium) |
-| $203     | $0 (break even) |
-| $220     | +$17 (max profit) |
-| $230     | +$17 (capped) |
-
-**Max Risk:** $3/share | **Max Profit:** $17/share (5.7x leverage)
-
-**When to use:** Bullish but want limited risk
+**Max Risk:** ~$10-14/share | **Max Profit:** ~$30-40/share
+**When to use:** Bullish on gold, want leverage but limited risk
 
 ---
 
-### 4. Put Debit Spread (Cheaper than protective put)
-**What:** Buy put, sell put at lower strike
+### 5. Put Debit Spread (Cheaper Protection)
+**What:** Buy put at one strike, sell put at lower strike — reduces cost
 
-**Example:**
-- GLD at $200
-- Buy $200 put: $4
-- Sell $180 put: $1
-- Net cost: $3
+**Example (GLD at $413, expiring September 2026):**
+- Buy **GLD Sep 2026 $400 put**: ~$15-18
+- Sell **GLD Sep 2026 $370 put**: ~$7-9
+- Net cost: **~$8-11 per share ($800-1,100 per spread)**
 
-| GLD Price | Profit/Loss |
-|-----------|--------------|
-| $200     | +$17 |
-| $190     | +$7 |
-| $180     | -$3 |
+| GLD at Expiration | Profit/Loss |
+|--------------------|-------------|
+| Above $400 | -$8 to -$11 (lose full premium) |
+| Below $370 | **Max profit: ~$20-30** (difference between strikes minus premium) |
+| $370-$400 | Partial profit |
 
-**When to use:** Bearish, want to profit from drop
+**When to use:** Want downside protection but protective puts are too expensive
 
 ---
 
 ## ADVANCED STRATEGIES
 
-### 5. LEAPs (Long-Term Calls)
-**What:** Buy long-dated calls (1+ year)
+### 6. LEAPs (Long-Term Calls — 1+ Year)
+**What:** Buy long-dated calls for maximum leverage on long-term thesis
 
 **Example:**
-- GLD at $200
-- Buy Jan 2027 $200 call: $25
-- If GLD goes to $250: Call worth ~$50 (+100%)
-- If GLD stays $200: Lose $25 (time decay)
+- GLD at **$413** (March 27, 2026)
+- Buy **GLD Jan 2027 $420 call**: ~$30-40
+- If GLD hits $500 by Jan 2027: Call worth ~$80+ (+100-150%)
+- If GLD stays flat: Lose $30-40 (time decay)
 
-**When to use:** Long-term bullish, want leverage
+**Why Jan 2027?** Gives you 9+ months, avoids near-term volatility
+**When to use:** Long-term bullish thesis, want maximum leverage
 
 ---
 
-### 6. Iron Condor (Neutral/Volatile)
-**What:** Sell OTM call + put, buy further OTM protection
+### 7. Iron Condor (Range-Bound Market)
+**What:** Sell OTM call + put, buy further OTM protection on both sides
 
-**Setup:**
-- Sell $220 call / Buy $230 call
-- Sell $180 put / Buy $170 put
-- Net credit: ~$2-3
+**Example (GLD at $413, expiring September 2026):**
+- Sell **$450 call** / Buy **$460 call** → net credit ~$5-8
+- Sell **$370 put** / Buy **$360 put** → net credit ~$5-8
+- **Total net credit: ~$10-16 per spread ($1,000-1,600)**
+- Profit if GLD stays between $370-$450 at expiration
+- Max loss if GLD breaks through either side
 
-**When to use:** Expect low volatility, range-bound
+**When to use:** Expect low volatility, range-bound between $370-$450
 
 ---
 
 ## CRASH-SPECIFIC STRATEGIES
 
-### Strategy A: Buy the Dip with Puts
+### Strategy A: Buy the Dip with Cash-Secured Puts
 
 | Day | Action |
 |-----|--------|
 | 1-3 | Watch, do nothing |
-| 3-5 | Sell cash-secured puts (SLV $25 strike) |
-| If assigned | You're now holding SLV at discount |
+| 3-5 | If GLD dropped >10%, sell Sep 2026 $370 put (collect premium) |
+| If assigned | You're now holding GLD at a discount |
 | 30-60 days | Sell covered calls to reduce cost basis |
 
-**Example (SLV at $30 pre-crash):**
-- Sell $25 put, get $2 premium
-- Crash: SLV drops to $22
-- Get assigned at $25, cost basis $23
-- Sell $28 call to generate more income
+**Example (GLD dropped to $370 post-crash):**
+- Sell **SLV Sep 2026 $50 put**, receive ~$4-6 premium
+- If SLV recovers to $60: Keep premium, no assignment
+- If SLV drops to $45: Get assigned at $50, cost basis effectively **$44-46**
 
 ---
 
 ### Strategy B: Silver LEAP + Protective Put
-**For silver bulls:**
+**For silver bulls with current SLV at ~$63:**
 
-| Position | Details |
-|----------|---------|
-| Buy SLV Jan 2027 $30 call | $4 (LEAP) |
-| Buy SLV $22 put | $1 (protection) |
-| Total cost | $5 |
-| Max risk | $5 |
-| Upside | Unlimited |
+| Position | Details | Cost |
+|----------|---------|------|
+| Buy SLV Sep 2026 $70 call | OTM LEAP, long-term bullish | ~$8-12 |
+| Buy SLV Sep 2026 $52 put | 17% OTM protection | ~$4-6 |
+| **Total cost** | | **~$12-18/share** |
+
+| SLV at Expiration | P&L |
+|-------------------|-----|
+| Below $52 | Max loss = premium paid ($12-18) |
+| $52-$70 | Partial loss |
+| Above $70 | Unlimited upside |
+| SLV at $80 | **+$8-10 profit (+50-70%)** |
 
 ---
 
-### Strategy C: Metal Miners Options
-**For GDX/SILJ (more volatile):**
+### Strategy C: Metal Miners Options (More Volatile = Cheaper Options)
+**For GDX/SILJ — more volatile than GLD, thus cheaper options with bigger moves:**
 
-| Strategy | Risk | Reward |
-|----------|------|--------|
-| Protective Put | Limited | Unlimited |
-| Call Spread | Limited | Limited |
-| LEAP | High | High |
+| Strategy | Why Here | Risk Level |
+|----------|----------|------------|
+| Protective Put | GDX/SILJ more volatile — insurance valuable | Low |
+| Bull Call Spread | Cheaper due to higher IV — bigger leverage | Medium |
+| LEAP | GDX $85 → $100 target = +18% | Medium-High |
 
-**Why miners?** More volatile = cheaper options, bigger moves
+**Example (GDX at $85, Sep 2026):**
+- Buy **GDX Sep 2026 $90 call**: ~$8-10
+- Sell **GDX Sep 2026 $100 call**: ~$4-5
+- Net cost: **~$4-6 per share ($400-600 per spread)**
+- GDX hits $100: Profit ~$5-9 = **~100-150% return**
 
 ---
 
 ## QUICK REFERENCE
 
-| Your View | Strategy | Why |
-|-----------|----------|-----|
-| Own gold, want protection | Protective Put | Insurance |
-| Want to buy cheaper | Cash-Secured Put | Get discount |
-| Bullish, limited risk | Bull Call Spread | Leverage |
-| Very bullish, long-term | LEAP Calls | Maximum leverage |
-| Neutral, low volatility | Iron Condor | Income |
-| Big move coming | Straddle | Profit from volatility |
+| Your View | Strategy | Expiration | Why |
+|-----------|----------|-----------|-----|
+| Own gold, want protection | Protective Put | Sep/Dec 2026 | Insurance |
+| Want to buy cheaper | Cash-Secured Put | Sep/Dec 2026 | Get discount |
+| Own gold, want income | Sell Covered Call | Monthly or Sep 2026 | Generate cash |
+| Bullish, limited risk | Bull Call Spread | Sep/Dec 2026 | Leverage |
+| Very bullish, long-term | LEAP Calls | Jan/Dec 2027 | Maximum leverage |
+| Neutral, range-bound | Iron Condor | Sep/Dec 2026 | Income |
+| Silver bull, long-term | SLV LEAP + Put | Sep 2026 | Leverage + hedge |
 
 ---
 
 ## KEY TAKEAWAYS
 
-1. **Protective puts** = cheapest insurance (1-2%)
-2. **Spreads** = reduce cost, limit profit
-3. **LEAPs** = best for long-term plays
-4. **Miners (GDX/SILJ)** = cheaper options, bigger moves
-5. **Sell covered calls** = generate income on holdings
+1. **Protective puts** = cheapest insurance (1-3% of position)
+2. **Spreads** = reduce cost, limit profit — good for expensive assets like GLD
+3. **LEAPs** = best for long-term thesis (buy Jan 2027 or Dec 2027)
+4. **Miners (GDX/SILJ)** = more volatile = cheaper options, bigger % moves
+5. **Sell covered calls** = generate 3-8% income on holdings annually
+6. **Always specify expiration date** — options are wasting assets without a date
 
 ---
 
-*Options involve risk. Do your own research.*
+*Options involve risk. Prices shown are estimates based on March 27, 2026 levels. Always verify with live option chains before trading. This is not financial advice.*
 
 ---
 
