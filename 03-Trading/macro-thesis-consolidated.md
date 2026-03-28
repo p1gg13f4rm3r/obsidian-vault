@@ -257,11 +257,11 @@ The theoretical deflationary benefit of AI takes 10-20 years to materialize. The
 
 | Job Type | Why AI Hits Hard | Scale |
 |---|---|---|
+| **Software Engineering / IT** | Code generation, debugging, testing, documentation, architecture review — already happening | Junior devs, QA, DevOps, IT support. FAANG/A Tech layoffs already started. Highest-paid field = most politically sensitive. |
 | **Legal** | Document review, contract analysis, discovery — AI already does this | Paralegals, junior associates, compliance |
 | **Medical** | Image analysis (X-rays, CTs, MRIs), diagnostic AI | Radiologists, pathologists |
 | **Finance** | Modeling, analysis, reporting, fraud detection | Analysts, accountants, advisors |
 | **Admin/Clerical** | Data entry, scheduling, correspondence | Office workers, secretaries |
-| **Programming** | Code generation, debugging, testing | Junior devs, QA |
 | **Journalism/Content** | Basic reporting, summarization, translation | Junior writers, content mills |
 | **Consulting** | Market research, data synthesis, slide decks | Analysts, junior consultants |
 
@@ -284,7 +284,7 @@ The theoretical deflationary benefit of AI takes 10-20 years to materialize. The
 The US voting system creates a structural problem that China and authoritarian regimes don't have:
 
 - **2-4 year election cycles**: Politicians cannot wait 10 years for AI productivity to lower prices. Unemployment today = votes lost tomorrow.
-- **White collar is the biggest displacement target**: Legal, medical, finance, consulting, admin — 50-80M knowledge workers. These voters are educated, connected, vote at higher rates, and have professional guilds that mobilize fast.
+- **White collar is the biggest displacement target**: Software/IT, legal, medical, finance, consulting, admin — 50-80M knowledge workers. **Software/IT is the most politically sensitive**: already-high-paying field ($150K-$500K+ TC for senior engineers) being laid off right now. FAANG/Tech companies are laying off in waves while publishing AI tools that replace developers. These voters are educated, connected, vote at higher rates, and have professional communities that amplify fast (Hacker News, Twitter/X, Reddit are all populated by these workers).
 - **High student debt**: US white collar workers commonly carry $100K+ in debt. Layoffs + debt burden = political crisis fast.
 - **No political will to slow AI**: China is pushing AI aggressively. US politicians won't ban or slow AI even if it causes mass white collar unemployment — it's framed as a geopolitical race they can't afford to lose.
 - **Social safety net is weaker**: Unlike Europe, the US has limited unemployment benefits. Mass white collar displacement = immediate political pressure for stimulus.
