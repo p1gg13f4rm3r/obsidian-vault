@@ -253,10 +253,30 @@ Historical precedent:
 
 The theoretical deflationary benefit of AI takes 10-20 years to materialize. The transition chaos hits in 2-5 years. This is the critical distinction the original bear case misses.
 
+**Critical correction:** The biggest AI displacement impact is on *white collar* knowledge workers, not blue collar. This makes the political response faster and larger.
+
+| Job Type | Why AI Hits Hard | Scale |
+|---|---|---|
+| **Legal** | Document review, contract analysis, discovery — AI already does this | Paralegals, junior associates, compliance |
+| **Medical** | Image analysis (X-rays, CTs, MRIs), diagnostic AI | Radiologists, pathologists |
+| **Finance** | Modeling, analysis, reporting, fraud detection | Analysts, accountants, advisors |
+| **Admin/Clerical** | Data entry, scheduling, correspondence | Office workers, secretaries |
+| **Programming** | Code generation, debugging, testing | Junior devs, QA |
+| **Journalism/Content** | Basic reporting, summarization, translation | Junior writers, content mills |
+| **Consulting** | Market research, data synthesis, slide decks | Analysts, junior consultants |
+
+**White collar displacement is MORE politically explosive than blue collar:**
+
+- These workers vote in higher proportions and donate to campaigns
+- They have professional associations that mobilize fast (law societies, medical boards, finance guilds)
+- They carry high student debt ($100K+ common) — default risk = urgent political pressure
+- They are concentrated in politically competitive coastal metros
+- They have 401ks and stocks — politicians can't ignore wealth destruction
+
 | Phase | AI Impact | Political Response | Market Impact |
 |---|---|---|---|
-| **Short/medium term (1-7 years)** | Concentrated job losses: truck drivers, radiologists, paralegals, warehouse workers, call center staff — all displaced simultaneously | Fiscal stimulus, retraining programs, UBI proposals, expanded welfare | **Inflationary** (government spending) |
-| **Transition (3-10 years)** | Social chaos, political radicalization, electoral pressure | Stimulus, protectionism, AI regulation battles | **Volatile + inflationary** |
+| **Short/medium term (1-7 years)** | White collar wave: lawyers, radiologists, analysts, consultants — all displaced simultaneously | Fiscal stimulus, retraining, UBI proposals, professional guild pressure | **Inflationary** (government spending) |
+| **Transition (3-10 years)** | Social chaos, political radicalization, national crisis | Stimulus, protectionism, AI regulation battles | **Volatile + inflationary** |
 | **Long term (10-20 years)** | Mature AI economy: cheap goods, productivity gains | Stable | **Deflationary** |
 
 **Why the US is particularly vulnerable:**
@@ -264,10 +284,11 @@ The theoretical deflationary benefit of AI takes 10-20 years to materialize. The
 The US voting system creates a structural problem that China and authoritarian regimes don't have:
 
 - **2-4 year election cycles**: Politicians cannot wait 10 years for AI productivity to lower prices. Unemployment today = votes lost tomorrow.
-- **Concentrated displacement**: AI doesn't replace evenly — it hits specific sectors hard simultaneously. Truck drivers alone are 3.5M people. That's politically explosive.
-- **No political will to slow AI**: China is pushing AI aggressively. US politicians won't ban or slow AI even if it causes mass unemployment — it's framed as a geopolitical race they can't afford to lose.
-- **Social safety net is weaker**: Unlike Europe, the US has limited unemployment benefits. Mass displacement = immediate political pressure for stimulus.
-- **Political radicalization**: Concentrated unemployment in swing states = extreme electoral pressure for immediate government action.
+- **White collar is the biggest displacement target**: Legal, medical, finance, consulting, admin — 50-80M knowledge workers. These voters are educated, connected, vote at higher rates, and have professional guilds that mobilize fast.
+- **High student debt**: US white collar workers commonly carry $100K+ in debt. Layoffs + debt burden = political crisis fast.
+- **No political will to slow AI**: China is pushing AI aggressively. US politicians won't ban or slow AI even if it causes mass white collar unemployment — it's framed as a geopolitical race they can't afford to lose.
+- **Social safety net is weaker**: Unlike Europe, the US has limited unemployment benefits. Mass white collar displacement = immediate political pressure for stimulus.
+- **Political radicalization**: Concentrated unemployment in coastal metros (New York, SF, Chicago, Boston) = politically active voters who organize and pressure fast.
 
 **The 1970s parallel — AI mirrors the energy shock pattern:**
 
