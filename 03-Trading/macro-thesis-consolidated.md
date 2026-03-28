@@ -255,15 +255,19 @@ The theoretical deflationary benefit of AI takes 10-20 years to materialize. The
 
 **Critical correction:** The biggest AI displacement impact is on *white collar* knowledge workers, not blue collar. This makes the political response faster and larger.
 
-| Job Type | Why AI Hits Hard | Scale |
-|---|---|---|
-| **Software Engineering / IT** | Code generation, debugging, testing, documentation, architecture review — already happening | Junior devs, QA, DevOps, IT support. FAANG/A Tech layoffs already started. Highest-paid field = most politically sensitive. |
-| **Legal** | Document review, contract analysis, discovery — AI already does this | Paralegals, junior associates, compliance |
-| **Medical** | Image analysis (X-rays, CTs, MRIs), diagnostic AI | Radiologists, pathologists |
-| **Finance** | Modeling, analysis, reporting, fraud detection | Analysts, accountants, advisors |
-| **Admin/Clerical** | Data entry, scheduling, correspondence | Office workers, secretaries |
-| **Journalism/Content** | Basic reporting, summarization, translation | Junior writers, content mills |
-| **Consulting** | Market research, data synthesis, slide decks | Analysts, junior consultants |
+| Job Type | Who Gets Hit First | Who Survives (Near Term) | Political Pressure |
+|---|---|---|---|
+| **Software Engineering / IT** | Junior devs, QA, DevOps, IT support — AI coding tools already replacing junior workflow | Staff/Principal engineers, architects, tech leads — design + strategy insulated | Very high: FAANG cutting junior hiring while shipping AI tools. Highly paid, amplifies fast. |
+| **Legal** | Paralegals, junior associates — document review, research, contracts AI already does | Partners, rainmakers — client relationships, courtroom strategy, deal-closing | High: Biglaw already cutting associate headcount. Organized profession (bar associations). |
+| **Finance** | IB analysts, junior quant, compliance, basic modeling — AI replaces execution | MDs, PMs, deal-makers — relationships, capital allocation, client management | High: Finance is heavily regulated, politically connected. Junior IB/quant already shrinking. |
+| **Consulting** | Junior consultants, research analysts — slide decks, data synthesis, benchmarking | Partners who sell work — relationships, strategic judgment, political access | Medium-High: McKinsey/BCG already deploying AI internally. "Do more with fewer" is explicit. |
+| **Medical** | Radiologists, pathologists — pure pattern recognition AI is genuinely competitive | Surgeons, GPs, specialists with patient relationships — liability + trust barrier | Medium: Radiologists organized but facing real economic pressure from AI. Liability law lags AI adoption. |
+| **Admin/Clerical** | Data entry, scheduling, correspondence, basic reporting | Executive assistants to senior leadership | High volume, lower political power. |
+| **Journalism/Content** | Basic reporting, summarization, translation, content mills | Investigative journalists, columnists with audiences | Lower political power but culturally influential. |
+
+**Key insight — the seniority split matters:**
+
+Displacement is not uniform. Senior rainmakers, partners, and relationship-holders are insulated. **The most politically explosive cohort is the mid-level professional** (30-40 years old, educated, carries debt and mortgages, prime voting demographic, not senior enough to have buffers) — and that's exactly who's most exposed.
 
 **White collar displacement is MORE politically explosive than blue collar:**
 
