@@ -56,8 +56,13 @@ def cmd_analyze(args, config: dict):
         from src.data import fetcher
         from src.analysis import indicators as ind_mod
 
-        symbol_list = args.symbols.split(',') if args.symbols else ['SPY']
+        symbol_list = args.symbols.split(',') if args.symbols else None  # None = all from config
         strategy_list = [args.strategy] if args.strategy else None
+
+        # If no symbols specified, load all from config
+        if symbol_list is None:
+            symbols_data = load_symbols(config.get('config_path', 'config'))
+            symbol_list = [s['symbol'] for s in symbols_data.get('default', [])]
 
         all_signals = []
         for sym in symbol_list:
