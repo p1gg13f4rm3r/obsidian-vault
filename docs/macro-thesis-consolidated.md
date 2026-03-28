@@ -11,6 +11,7 @@
 2. [The Bull Case (Original Thesis)](#2)
 3. [The Bear Case (Counterarguments)](#3)
 4. [The Empire Decay Model — Dollar Inflection Point](#4)
+   - [4.4b Trade Policy Paradox: US Actions Accelerate Dedollarization](#4-4b)
 5. [Historical Fact-Checking: What the Data Says](#5)
 6. [My Honest Assessment](#6)
 7. [Recommended Positioning](#7)
@@ -332,6 +333,80 @@ The guarantee that backs the dollar requires the US to be willing and able to pr
 | **Iran war** | **2026** | **Direct test: can/will the US respond decisively?** |
 
 **The petrodollar connection:** The US-Saudi implicit deal is: *the US provides security for the Gulf, Saudi prices oil in dollars.* This is the structural anchor of dollar dominance. If the US response to Iran — Saudi Arabia's rival — is **constrained**, the security guarantee starts showing cracks.
+
+---
+
+<a name="4-4b"></a>
+### 4.4b The Trade Policy Paradox: How US Actions Accelerate Dedollarization
+
+*This section was added after the original thesis — it identifies a structural flaw the original analysis missed.*
+
+**Core insight: US trade policy with allies is a short-term tactical win at the cost of long-term dollar hegemony.**
+
+The dollar's reserve status is not just about GDP or military power. It's about **trust and network effects** — the idea that the dollar system serves global commons, not just US interests. The US can weaponize the dollar precisely *because* it's the reserve currency. But every use of that weapon degrades the long-term foundation.
+
+#### How Dollar Hegemony Actually Works
+
+| Component | What It Requires |
+|---|---|
+| Neutrality | "The dollar is the world's currency, not America's weapon" |
+| No alternatives | Where else would you put reserves? Euro? Yuan? Gold? |
+| Network effects | All commodity pricing, trade invoicing, payments flow through dollar rails |
+| Security guarantee | The petrodollar deal: US protects Gulf → Gulf prices oil in dollars |
+
+The US weaponizes the dollar to maintain hegemony. This creates the very alternatives that erode dollar hegemony. **That's the paradox.**
+
+#### The Self-Inflicted Acceleration
+
+| Mechanism | What's Happening | Impact on Dollar |
+|---|---|---|
+| **SWIFT/ sanctions** | Every "we're cutting you off from SWIFT" moment | 30-second commercial for alternatives |
+| **Tariff threats on allies** | "We're exposed to a currency we don't control" | Allies diversify trade settlement away from dollars |
+| **"America First"** | Signals dollar system serves US interests first | Reduces perceived neutrality |
+| **Asset seizure (Russia)** | Frozen reserves showed Treasuries are not risk-free | Structural trust erosion |
+| **Trade fragmentation** | Bilateral deals shift to local currencies | Bypasses dollar rails |
+
+#### The BRICS+ Acceleration
+
+The dedollarization push isn't China badmouthing the dollar — it's **US policy doing the work for China.**
+
+- India-Russia oil trade in rupees/yuan, not dollars
+- Gulf states accepting yuan for some oil
+- ASEAN moving toward local currency payment systems
+- EU built INSTEX specifically to bypass dollar sanctions on Iran
+- BRICS+ countries settling in local currencies (Russia-India, China-Gulf, Iran-China)
+
+Each is small individually. **The pattern is the problem.**
+
+#### The Trade Policy Paradox Table
+
+| Trade Policy Goal | Short-term Win | Long-term Cost |
+|---|---|---|
+| Tariffs force bilateral deals | US gets better terms | Destroys multilateral system that sustains dollar |
+| Dollar weapon for sanctions | Instant leverage | Accelerates dedollarization |
+| "America First" | Domestic political win | Alliance fatigue → strategic decoupling |
+| Pressure on deficit countries | Perceived fairness | Pushes allies to reduce dollar dependency |
+
+#### What Actually Protects Dollar Reserve Status
+
+| Factor | Status | Trend |
+|---|---|---|
+| Open capital markets | ✓ Still true | Stable |
+| Deep, liquid Treasury market | ✓ Still true | Stable |
+| Rule of law for investors | ⚠️ Mixed | Degrading |
+| Neutrality of payment rails | ✗ Degrading | Worsening |
+| Credibility as store of value | ⚠️ Debated | Under pressure |
+| No alternatives ready | ⚠️ Improving slowly | Worsening for US |
+
+#### The Honest Verdict
+
+> **USD reserve status is eroding not because America is weak, but because America is using its strength recklessly.** Every sanction, every frozen reserve, every "do what we say or we cut you off" moment plants seeds for alternatives.
+
+The timeline is long — dollar hegemony won't collapse in 2 years. But the direction of travel has shifted. The US is spending **principal** (trust, network effects) to extract **interest** (short-term concessions).
+
+**The implicit petrodollar deal is breaking down.** The Saudis accepted dollar pricing for oil in 1974 in exchange for US security guarantees. The next generation of Saudi leadership is already hedging — and current US trade pressure on the Gulf accelerates that hedging.
+
+**Bottom line for the macro thesis:** US trade policy with allies is a tactical win that accelerates dedollarization — which is the one thing that gives the US *structural* leverage over those allies. Solving the trade problem makes the dollar problem worse. That's the tradeoff the thesis needs to account for.
 
 ---
 
