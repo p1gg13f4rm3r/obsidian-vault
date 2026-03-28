@@ -1050,11 +1050,31 @@ Given 2025 gains: GLD +62%, SLV +139%, GDX +145%, SILJ +168%
 **Protective Puts:**
 - Buy 10-15% OTM puts on GLD/SLV/GDX
 - Cost: ~1-2% of position
-- Example: Own $100k GLD → Buy $190 puts = ~$2k insurance
+- **Expiration: 6-12 months out** (e.g., buy puts expiring in December 2026 for protection through year-end)
+- Strike: 10-15% below current price
+
+**How it works — with correct numbers:**
+
+*Example: You own $100k of GLD*
+- Current GLD price: ~$413/share → 242 shares = ~$100k
+- Buy a **$370 put** (10% below current $413), expiring December 2026
+- Put cost: ~$8-12 per share × 100 multiplier = ~$800-1,200 per contract
+- Buy 2-3 contracts for full position coverage → **~$1,600-3,600 total cost**
+- Cost as % of position: **~1.6-3.6%** ✓
+
+*What this protects:*
+- If GLD drops to $370 or below → you can sell at $370 (strike price), limiting your loss
+- Maximum loss: You only lose the put premium (~$1,600-3,600) if GLD stays above $370
+- Upside: Fully preserved — you still own the GLD shares and benefit from any rally
+
+**Key terms:**
+- **Strike price**: The price at which you can sell your shares (set below current price = OTM)
+- **Expiration**: When the put expires — buy 6-12 months out to ensure coverage through volatility
+- **Premium**: What you pay for the put — determined by: stock price, strike, time, and volatility
 
 **What it does:**
-- Limits downside to ~15%
-- Preserves upside
+- Limits downside to the strike price minus premium paid
+- Preserves all upside above the strike price
 
 ---
 
@@ -1077,18 +1097,18 @@ Given 2025 gains: GLD +62%, SLV +139%, GDX +145%, SILJ +168%
 
 ### 3. HEDGE WITH COLLAR (Zero Cost)
 
-**Setup:**
-- Buy GLD $190 put: $3
-- Sell $215 call: $2
-- Net cost: $1
+**Setup (using current prices ~$413):**
+- Buy GLD $370 put (10% below): ~$8-10
+- Sell GLD $450 call (10% above): ~$5-7
+- Net cost: ~$2-5 per share (or ~0.5-1% of position)
 
 | GLD Price | P&L |
 |-----------|------|
-| $180 | -$10 (protected) |
-| $200 | +$17 |
-| $215+ | +$17 (capped) |
+| Below $370 | Loss limited to put cost (~$3-5/share) |
+| $370-$450 | Gain/loss = market move minus collar cost |
+| Above $450 | Capped at $450 (called away) |
 
-**Result:** Downside protected, upside capped, near-zero cost
+**Result:** Downside protected, upside capped at ~$450, near-zero net cost
 
 ---
 
