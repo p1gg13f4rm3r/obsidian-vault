@@ -1,0 +1,106 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '03-Trading/macro-thesis*.md'
+      - 'docs/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install markdown
+
+      - name: Convert Markdown to HTML
+        run: |
+          python3 << 'PYEOF'
+          import markdown, os, re
+
+          css = open('docs/style.css').read() if os.path.exists('docs/style.css') else ''
+
+          nav_en = '<div class="nav"><a href="index.html">Overview</a><span class="lang-switch"><a href="macro-thesis-consolidated.html">EN</a><a href="macro-thesis-consolidated-zh.html">ZH</a></span></div>'
+          nav_zh = '<div class="nav"><a href="index.html">Overview</a><span class="lang-switch"><a href="macro-thesis-consolidated.html">EN</a><a href="macro-thesis-consolidated-zh.html">ZH</a></span></div>'
+          footer = '<div class="footer"><p>Last updated: March 27, 2026 | <a href="https://github.com/p1gg13f4rm3r/obsidian-vault">GitHub Repo</a></p></div>'
+
+          css = """
+          <style>
+            :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --gold: #f0b429; --blue: #58a6ff; --orange: #ffa657; }
+            * { box-sizing: border-box; }
+            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+            a { color: var(--blue); }
+            h1,h2,h3,h4 { color: #ffffff; margin-top: 1.8em; margin-bottom: 0.5em; font-weight: 600; }
+            h1 { font-size: 1.8rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4em; }
+            h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+            h3 { font-size: 1.15rem; }
+            hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
+            code { background: var(--card); padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.88em; color: var(--orange); }
+            pre { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1em; overflow-x: auto; }
+            pre code { background: none; padding: 0; color: var(--text); }
+            table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.88em; }
+            th { background: var(--card); color: #fff; padding: 0.6em 0.8em; text-align: left; border: 1px solid var(--border); }
+            td { padding: 0.5em 0.8em; border: 1px solid var(--border); }
+            tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+            blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.5em 1em; color: var(--muted); }
+            ul,ol { padding-left: 1.5em; }
+            li { margin: 0.2em 0; }
+            strong { color: #fff; }
+            em { color: var(--muted); }
+            .nav { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); align-items: center; }
+            .nav a { color: var(--muted); font-size: 0.9rem; font-weight: 500; }
+            .nav a:hover { color: var(--text); text-decoration: none; }
+            .lang-switch { margin-left: auto; display: flex; gap: 0.75rem; font-size: 0.85rem; }
+            .lang-switch a { color: var(--muted); }
+            .lang-switch a:hover { color: var(--text); }
+            .footer { color: var(--muted); font-size: 0.8rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+            .footer a { color: var(--blue); }
+          </style>
+          """
+
+          footer = '<div class="footer"><p>Last updated: March 27, 2026 | <a href="https://github.com/p1gg13f4rm3r/obsidian-vault">GitHub Repo</a></p></div>'
+
+          files = [
+              ('03-Trading/macro-thesis-consolidated.md', 'docs/macro-thesis-consolidated.html', nav_en, 'en'),
+              ('03-Trading/macro-thesis-consolidated-zh.md', 'docs/macro-thesis-consolidated-zh.html', nav_zh, 'zh'),
+          ]
+
+          for md_path, html_path, nav, lang in files:
+              with open(md_path, 'r') as f:
+                  md_content = f.read()
+              md_content = re.sub(r'^---\n.*?\n---\n', '', md_content, flags=re.DOTALL)
+              html_body = markdown.markdown(md_content, extensions=['tables', 'fenced_code'])
+              m = re.search(r'<h1>(.*?)</h1>', html_body)
+              title = m.group(1) if m else 'Macro Thesis'
+              html = '<!DOCTYPE html>\n<html lang="{}">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>{}</title>\n{}</head>\n<body>\n{}\n{}\n{}\n</body>\n</html>'.format(lang, title, css, nav, html_body, footer)
+              with open(html_path, 'w') as f:
+                  f.write(html)
+              print('Generated: ' + html_path)
+          PYEOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
