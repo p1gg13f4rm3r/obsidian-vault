@@ -14,6 +14,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 from src.data import fetcher
+from src.data import cache as data_cache
 from src.analysis import signals
 from src.portfolio import stats
 from src.backtest import engine
@@ -287,18 +288,34 @@ def cmd_data(args, config: dict):
         if args.fetch:
             symbol = args.fetch.upper()
             print(f"Fetching data for: {symbol}")
-            result = fetcher.fetch_symbol(symbol)
-            print(f"Data fetched successfully for {symbol}")
+            df = fetcher.fetch_symbol(symbol)
+            if df.empty:
+                print(f"No data returned for {symbol}", file=sys.stderr)
+                sys.exit(1)
+            # Compute indicators before saving
+            from src.analysis import indicators as ind_mod
+            df = ind_mod.add_indicators(df)
+            # Save to SQLite cache
+            data_cache.save_data(symbol, df)
+            print(f"Data fetched and cached successfully for {symbol}")
             if args.json:
-                print(json.dumps(result, indent=2, default=str))
+                print(json.dumps({"symbol": symbol, "rows": len(df), "latest_date": str(df.index[-1]) if len(df) else None}, indent=2))
             sys.exit(0)
         
         elif args.refresh_all:
             print("Refreshing all symbol data...")
             symbols_data = load_symbols(config['config_path'])
             all_symbols = [s['symbol'] for s in symbols_data.get('default', [])]
+            from src.analysis import indicators as ind_mod
             for symbol in all_symbols:
-                print(f"  Refreshing {symbol}...")
+                print(f"  Refreshing {symbol}...", end=" ")
+                df = fetcher.fetch_symbol(symbol)
+                if df.empty:
+                    print(f"FAILED (no data)")
+                    continue
+                df = ind_mod.add_indicators(df)
+                data_cache.save_data(symbol, df)
+                print(f"OK ({len(df)} rows)")
             print("All data refreshed successfully!")
             sys.exit(0)
         

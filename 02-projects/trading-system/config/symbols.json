@@ -106,6 +106,16 @@
       "category": "Commodities"
     },
     {
+      "symbol": "GLD",
+      "name": "SPDR Gold Shares ETF",
+      "category": "Commodities"
+    },
+    {
+      "symbol": "SLV",
+      "name": "iShares Silver Trust ETF",
+      "category": "Commodities"
+    },
+    {
       "symbol": "NEM",
       "name": "Newmont Corporation",
       "category": "Commodities"

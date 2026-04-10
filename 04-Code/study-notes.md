@@ -4,7 +4,7 @@
 
 | Category | Count |
 |---------|-------|
-| [Stock Trading](#stock-trading) | 1 |
+| [Stock Trading](#stock-trading) | 2 |
 | [AI / Autonomous Agents](#ai--autonomous-agents) | 6 |
 | [Research / experiments](#research--experiments) | 1 |
 | [Learning / Education](#learning--education) | 3 |
@@ -14,6 +14,16 @@
 ---
 
 ## Stock Trading
+
+### [github.com/shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos)
+**Summary:** Open-source foundation model for financial candlestick (K-line) data. Trained on OHLCV data from 45+ global exchanges. First open-source model to treat financial candlesticks as a "language" — tokenizer quantizes multi-dimensional K-line data into hierarchical discrete tokens, then autoregressive Transformer handles forecasting and diverse quantitative tasks. Accepted by AAAI 2026.
+- Added: 2026-04-10
+- Status: To be studied
+- Notes:
+  - Model sizes: Kronos-mini (4.1M), Kronos-small (24.7M), Kronos-base (102.3M), Kronos-large (499.2M, closed)
+  - arXiv: [2508.02739](https://arxiv.org/abs/2508.02739)
+  - Live demo: https://shiyu-coder.github.io/Kronos-demo/
+  - HuggingFace: [NeoQuasar/Kronos-small](https://huggingface.co/NeoQuasar/Kronos-small)
 
 ### [github.com/ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
 **Summary:** LLM-driven A/H/US stock analyzer with multi-source quotes + real-time news + LLM decision dashboard + multi-channel push. Free, runs on schedule.

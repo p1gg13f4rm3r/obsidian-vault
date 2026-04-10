@@ -39,7 +39,8 @@ def generate_signals(
             'mean_reversion_conservative',
             'momentum',
             'price_action',
-            'volume'
+            'volume',
+            'vwap_reversion'
         ]
     
     signals_list = []
@@ -66,6 +67,9 @@ def generate_signals(
             elif strategy_name == 'volume':
                 from .strategies import volume
                 signal = volume.generate_signal(indicators_df)
+            elif strategy_name == 'vwap_reversion':
+                from .strategies import vwap_reversion
+                signal = vwap_reversion.generate_signal(indicators_df)
             else:
                 continue
             

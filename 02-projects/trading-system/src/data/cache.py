@@ -111,7 +111,12 @@ def save_data(symbol, df, source='yfinance'):
     fetched_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     for _, row in df.iterrows():
-        date_val = row.name
+        # Handle date from index OR from 'date' column
+        date_val = None
+        if df.index.name == 'date' or df.index.name is None:
+            date_val = row.get('date', None)
+        if date_val is None:
+            date_val = row.name  # fallback to index
         if isinstance(date_val, str):
             date_str = date_val[:10]
         elif hasattr(date_val, 'strftime'):
