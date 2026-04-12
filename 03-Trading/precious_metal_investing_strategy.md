@@ -47,6 +47,10 @@ updated: 2026-03-13
 5. **GSR at 63.4** — near historical mean (50-60), no extreme
 6. **GDX/GLD at 90th percentile** — miners extremely expensive vs gold
 
+### PM Core Strategy
+
+Active mean-reversion strategy for PM sector. See [[pm-core-strategy]] for full rules and backtest results.
+
 ---
 
 ## Long-Term Trend Analysis (15 Years: 2011-2026)
