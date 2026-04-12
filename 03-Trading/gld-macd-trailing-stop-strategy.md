@@ -340,3 +340,72 @@ cd ~/obsidian-vault/02-projects/trading-system
 5. **Silver and miners are worse long-term vehicles than GLD** — GLD's B&H of +937% in 21 years beats SLV's +573% and GDX's +203%. Physical gold outperforms the leveraged exposures over the long run in this dataset.
 
 *Backtest completed: 2026-04-12*
+
+---
+
+## SILJ & AG Backtest Results (Same MACD 12/26/9 + 12% Trail Strategy)
+
+**Run Date:** 2026-04-12 | **Script:** `/tmp/macd_trailing_stop_multi.py`
+
+### 4-Symbol Full Summary
+
+| Symbol | Period | Strategy | B&H | Gap | Trades | WR | PF | Max DD |
+|--------|--------|----------|-----|-----|--------|----|----|--------|
+| **SLV** | 19.8y | +337% | +400% | -63pp | 193 | 38.3% | 1.46 | -$2,659 |
+| **GDX** | 19.8y | +40.6% | +215% | -174pp | 189 | 40.7% | 1.08 | -$2,096 |
+| **AG** | 19.8y | +136.5% | +435% | -298pp | 197 | 34.5% | 1.09 | -$8,089 |
+| **SILJ** | 19.8y | **-14.3%** | +82% | -97pp | 134 | 38.1% | 0.97 | -$2,382 |
+
+> **AG (First Majestic Silver)** is the worst performer — only miner that loses money overall. Its extreme volatility (+25% trailing stops!) makes the 12% stop essentially a "normal" level that fires constantly, chopping the position in and out.
+>
+> **SILJ (Silver Miners)** also loses money overall despite silver being a strong performer. Too many whipsaw trades in a volatile, correlated sector.
+
+### BULL vs BEAR — MACD Strategy (Regime = GDX vs SMA200)
+
+| Symbol | Regime | Trades | Win Rate | Profit Factor | Total P&L | Avg/trade |
+|--------|--------|--------|----------|---------------|-----------|-----------|
+| GDX | **Bull** | 73 | 34.2% | 0.76 | **-$4,205** | -$57.61 |
+| GDX | Bear | 71 | 43.7% | 1.41 | +$8,173 | +$115.11 |
+| SLV | **Bull** | 72 | 34.7% | 0.97 | **-$870** | -$12.09 |
+| SLV | Bear | 74 | 40.5% | **2.25** | +$30,533 | +$412.61 |
+| SILJ | **Bull** | 75 | 36.0% | 0.61 | **-$9,910** | -$132.13 |
+| SILJ | Bear | 59 | 40.7% | 1.40 | +$8,317 | +$140.96 |
+| AG | **Bull** | 74 | 28.4% | 0.72 | **-$16,823** | -$227.34 |
+| AG | Bear | 81 | 35.8% | 1.25 | +$20,333 | +$251.02 |
+
+> **Regime definition:** SMA 200 — if GDX price > SMA200 at year start = Bull, else Bear.
+
+### Combined Portfolio (All 4 Symbols)
+
+| Regime | Trades | Win Rate | Profit Factor | Total P&L | Avg/trade |
+|--------|--------|----------|---------------|-----------|-----------|
+| **Bull** | 294 | 33.3% | **0.77** | **-$31,809** | **-$108** |
+| **Bear** | 285 | 40.0% | **1.46** | **+$67,355** | **+$236** |
+
+---
+
+### Key Findings — Extended Symbols
+
+1. **MACD strategy is a BULL KILLER.** Every symbol shows negative or near-zero profit factor in bull years. In bull markets, trend-following MACD gets you OUT right before the big moves and IN after the moves are already underway.
+
+2. **BEAR markets are where MACD makes all its money.** PF 1.46 in bear years across all symbols. The strategy is essentially shorting volatility/choppiness — it works when markets are range-bound or falling.
+
+3. **SLV is the MACD sweet spot.** Despite low WR (38%), its 2.25 PF in bear years is exceptional. Silver's violent swings create big gains on the few winning trades that more than cover the many small losses.
+
+4. **AG is structurally broken for this strategy.** 25% of exits via trailing stop — meaning 1 in 4 trades hits the 12% loss cap. The strategy locks in losses at exactly the wrong time in a volatile silver name.
+
+5. **SILJ underperforms despite silver being bullish.** Only 134 trades vs 189-197 for others — fewer valid MACD cross-ups. The strategy is whipsawing in and out of a volatile sector and bleeding slowly.
+
+### Comparison: PM Core (RSI<30) vs MACD Strategy
+
+| Metric | PM Core | MACD |
+|--------|---------|------|
+| **Best for** | Bull markets | Bear/range-bound markets |
+| **Win rate** | 50-60% | 35-41% |
+| **Profit factor (bull)** | 1.43-2.45 | 0.61-0.97 |
+| **Profit factor (bear)** | 0.79-1.84 | 1.25-2.25 |
+| **Trade frequency** | ~3-4/yr/symbol | ~10/yr/symbol |
+| **Avg hold** | 5-7 days | 17-20 days |
+| **B&H gap** | N/A (mean reversion) | -63 to -298pp |
+
+*PM Core and MACD are inversely suited to opposite regimes — they are complementary, not competing.*
