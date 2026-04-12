@@ -1381,3 +1381,116 @@ Given current high IV and rich call premiums:
 ---
 
 *Report generated: 2026-03-14*
+
+---
+
+# PM TACTICAL STRATEGY (20% SATELLITE TRANCHE)
+
+**Added:** 2026-04-12
+**Purpose:** Smaller, more frequent wins on the 20% tactical tranche — complementing the core 80% PM buy-and-hold.
+
+---
+
+## Two-Tier Framework
+
+| Tier | Allocation | Strategy | Entry Trigger | Exit |
+|------|------------|----------|---------------|------|
+| **Core** (80%) | Buy & Hold | Mean Reversion Aggressive | RSI < 30 | Hold until RSI > 50 |
+| **Tactical** (20%) | Active trading | PM Tactical | See below | +6% target / -2% stop / RSI>55 |
+
+**Rule:** Core 80% stays untouched. Only the 20% tactical tranche trades actively.
+
+---
+
+## PM Tactical Entry Signals
+
+### Entry 1 — EMA9 Crossover *(most frequent)*
+- Price crosses above EMA9 from below
+- RSI < 60 and rising (momentum confirmed)
+- Volume above 20-day SMA (confirms move)
+- **Strength:** 0.48–0.80
+
+### Entry 2 — Extended Pullback
+- Price below EMA9 AND RSI in 25–35 zone
+- RSI stopping its decline (stabilizing)
+- **Strength:** 0.50–0.85
+
+### Entry 3 — VWAP Bounce
+- Price 1.5%+ below VWAP AND RSI < 40
+- Price recovering (not making new lows)
+- **Strength:** 0.55–0.85
+
+---
+
+## Exit Rules (Tactical Only)
+
+| Condition | Action |
+|-----------|--------|
+| +6% profit target | TAKE PROFIT — don't give it back |
+| Price breaks VWAP | STOP OUT immediately |
+| -2% stop loss | STOP OUT immediately |
+| RSI > 55 | Consider taking profit / tightening stop |
+
+**Max risk per trade:** 2% of total portfolio (20% tranche × position sizing)
+
+---
+
+## Backtest Results (2-Year, $1,000/Trade)
+
+| Symbol | Return % | Win Rate | Trades | Avg Gain | Avg Duration |
+|--------|----------|----------|--------|----------|--------------|
+| **AG** | **+13.9%** | 72% | 18 | +12.4% | 5 days |
+| **SILJ** | **+9.2%** | 73% | 15 | +9.3% | 5 days |
+| **GDX** | **+9.0%** | 83% | 18 | +6.2% | 5 days |
+| **NEM** | **+5.5%** | 86% | 14 | +6.4% | 5 days |
+| SLV | +1.5% | 75% | 16 | +3.1% | 5 days |
+| GLD | +0.4% | 69% | 16 | +1.9% | 5 days |
+
+**Best performers:** AG, SILJ, GDX (small/mid-cap miners with most leverage)
+**GLD** is the anchor — barely moves short-term, use for core only
+
+---
+
+## Position Sizing
+
+- **Max 2 concurrent tactical trades** (spread across symbols)
+- **Per trade:** 20% of portfolio
+- **Max portfolio risk per trade:** 2% of total
+
+---
+
+## Current Market Signals (2026-04-12)
+
+All PM symbols showing SELL — market is extended, no tactical entries firing.
+
+| Symbol | Signal | RSI | Verdict |
+|--------|--------|-----|---------|
+| GDX | SELL | 57.7 | Extended — wait for pullback |
+| NEM | SELL | 63.2 | Extended — wait for pullback |
+| AG | BUY (VWAP) | 43.4 | VWAP bounce firing, watch for entry |
+| GLD | SELL | 49.8 | Neutral — no entry |
+| SLV | SELL | 50.1 | Neutral — no entry |
+| SILJ | SELL | 51.7 | Neutral — no entry |
+
+---
+
+## Running the Strategy
+
+```bash
+# Analyze PM basket for tactical signals
+cd ~/obsidian-vault/02-projects/trading-system
+./venv/bin/python main.py analyze --symbols GLD,GDX,SLV,SILJ,NEM,AG --strategy pm_tactical
+
+# Backtest tactical on a symbol
+./venv/bin/python main.py backtest --strategy pm_tactical --symbol GDX --period 2y
+```
+
+---
+
+## Notes
+
+- EMA9 added to indicators (was missing — only EMA13/50/200 existed)
+- `vwap_reversion` strategy also added to backtest engine
+- This strategy is for the 20% satellite tranche only
+- Core 80% PM position uses RSI<30 MR — different logic, different horizon
+- AG and SILJ have the most leverage for short-term tactical moves
