@@ -1,0 +1,10 @@
+{
+  "project_name": "pmtrader",
+  "project_path": "/home/paulyan/workspace/pmtrader",
+  "created": "2026-04-15",
+  "project_type": "existing-codebase-documentation",
+  "workflow": {
+    "auto_checkpoints": false,
+    "auto_commit": false
+  }
+}
