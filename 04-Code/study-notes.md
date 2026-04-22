@@ -156,8 +156,8 @@
 ### [github.com/obriensp/iWorkFileFormat](https://github.com/obriensp/iWorkFileFormat)
 **Summary:** Authoritative reverse-engineered spec for Apple iWork 2013+ formats (Pages, Numbers, Keynote). Contains full protobuf message definitions, type ID mappings, and IWA archive format documentation.
 - Added: 2026-03-20
-- Status: To be studied
-- **Full research report:** [`iWork-TrackChanges-Research-Report.md`](iWork-TrackChanges-Research-Report.md)
+- Status: Studied
+- **Research report:** Removed from vault (file deleted — content was migrated to memory/note-taking workflows)
 - Notes:
   - **Format:** ZIP bundle → `Index.zip` → Snappy-compressed Protobuf `.iwa` files
   - **Key files:** `Document.iwa` (main content), `AnnotationAuthorStorage.iwa` (authors)
