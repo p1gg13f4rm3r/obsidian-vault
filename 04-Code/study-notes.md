@@ -60,14 +60,16 @@
 - Notes: 
 
 ### [github.com/mattpocock/skills](https://github.com/mattpocock/skills)
-**Summary:** A collection of agent skills that extend capabilities across planning, development, and tooling. Personal directory of skills from Matt Pocock (creator of Total TypeScript).
+**Summary:** A collection of agent skills that extend capabilities across planning, development, and tooling. Personal directory of skills from Matt Pocock (creator of Total TypeScript). 20k+ stars.
 - Added: 2026-03-17
+- Updated: 2026-04-25
 - Status: To be studied
-- Notes: 
-  - **Planning & Design:** write-a-prd, prd-to-issues, grill-me
-  - **Development:** tdd, triage-issue, improve-codebase-architecture
-  - **Tooling:** setup-pre-commit, git-guardrails-claude-code
-  - **Writing:** write-a-skill
+- Notes:
+  - **Planning & Design:** to-prd, to-issues, grill-me, design-an-interface, request-refactor-plan
+  - **Development:** tdd, triage-issue, improve-codebase-architecture, migrate-to-shoehorn, scaffold-exercises
+  - **Tooling & Setup:** setup-pre-commit, git-guardrails-claude-code
+  - **Writing & Knowledge:** write-a-skill, edit-article, ubiquitous-language, obsidian-vault
+  - **Install:** `npx skills@latest add mattpocock/skills/<skill-name>`
 
 ### [github.com/Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything)
 **Summary:** Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about. Supports multi-platform agents (Claude Code, Codex, etc.). 2.2k+ stars.
