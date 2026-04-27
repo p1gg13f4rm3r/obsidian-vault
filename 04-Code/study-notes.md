@@ -75,10 +75,36 @@
 **Summary:** Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about. Supports multi-platform agents (Claude Code, Codex, etc.). 2.2k+ stars.
 - Added: 2026-03-21
 - Status: To be studied
-- Notes: 
+- Notes:
   - **Topics:** claude-code, claude-skills, codex-skills, knowledge-graph, understandcode
   - **License:** MIT
   - **Homepage:** https://lum.is-a.dev/Understand-Anything/
+
+### [Agent Skills](https://agentskills.io/home)
+**Summary:** Open standard for packaging and distributing capabilities to AI agents. A skill is a folder containing a `SKILL.md` file — metadata + instructions that tell an agent how to perform a specific task. Agents load skills via **progressive disclosure**: discovery (name + description only at startup) → activation (full instructions loaded on demand) → execution (follows instructions, optionally running bundled scripts). Skills can also bundle scripts, references, templates, and assets.
+- Added: 2026-04-27
+- Status: To be studied
+- **Docs:** https://agentskills.io/home
+- **GitHub org:** https://github.com/agentskills
+- Notes:
+  - **Core structure:**
+    ```
+    my-skill/
+    ├── SKILL.md          # Required: name + description + instructions
+    ├── scripts/          # Optional: executable code
+    ├── references/       # Optional: documentation
+    ├── assets/           # Optional: templates, images, data files
+    └── ...
+    ```
+  - **Progressive disclosure (3 stages):**
+    1. **Discovery** — agent loads name + description at startup
+    2. **Activation** — on task match, full SKILL.md loaded into context
+    3. **Execution** — follows instructions, optionally running bundled scripts
+  - **SKILL.md fields:** `name` (1-64 chars, kebab-case), `description` (1-1024 chars, includes keywords), `license`, `environment`, `tags`, `tools` (space-separated approved tools), `instructions`
+  - **Key principles for instructions:** step-by-step, self-contained, helpful error messages, handle edge cases gracefully
+  - **Use cases:** domain expertise capture, repeatable workflows, cross-product skill reuse
+  - **For skill creators:** Quickstart, Best practices, Optimizing descriptions, Evaluating skills, Using scripts
+  - **For client implementors:** Adding skills support to any agent platform
 
 ---
 
